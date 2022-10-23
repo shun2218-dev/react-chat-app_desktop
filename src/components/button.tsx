@@ -1,7 +1,7 @@
 import React, { FC, ReactNode } from "react";
 import styles from "@/styles/components/Button.module.scss";
 
-type ButtonProps = {
+type Props = {
   type: "button" | "submit" | "reset";
   disabled?: boolean;
   width?: string;
@@ -18,7 +18,7 @@ type ButtonProps = {
   header?: boolean;
 };
 
-const Button: FC<ButtonProps> = ({
+const Button: FC<Props> = ({
   type,
   disabled = false,
   width,

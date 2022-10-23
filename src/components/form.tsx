@@ -1,7 +1,7 @@
 import React, { FC, FormEvent, ReactNode } from "react";
 import styles from "@/styles/components/Form.module.scss";
 
-type Form = {
+type Props = {
   children: ReactNode;
   title: string;
   secondTitle?: string;
@@ -9,7 +9,7 @@ type Form = {
   startIcon?: ReactNode;
 };
 
-const Form: FC<Form> = ({
+const Form: FC<Props> = ({
   children,
   title,
   secondTitle,

@@ -1,7 +1,7 @@
 import React, { ChangeEvent, FC } from "react";
 import styles from "@/styles/components/TextArea.module.scss";
 
-type TextArea = {
+type Props = {
   label: string;
   value: string;
   rows?: number;
@@ -12,7 +12,7 @@ type TextArea = {
   onChange?: (e: ChangeEvent<HTMLTextAreaElement>) => void;
 };
 
-const TextArea: FC<TextArea> = ({
+const TextArea: FC<Props> = ({
   label,
   rows = 6,
   cols = 60,

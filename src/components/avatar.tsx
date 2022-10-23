@@ -14,7 +14,7 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { Skeleton } from "@mui/material";
 import styles from "@/styles/components/Avatar.module.scss";
 
-type Avatar = {
+type Props = {
   size?: number;
   state?: File | null;
   setState?: Dispatch<SetStateAction<File | null>>;
@@ -24,7 +24,7 @@ type Avatar = {
   profile?: boolean;
 };
 
-const Avatar: FC<Avatar> = ({
+const Avatar: FC<Props> = ({
   size = 60,
   state,
   setState,

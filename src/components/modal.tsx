@@ -2,7 +2,7 @@ import React, { FC, FormEvent, ReactNode } from "react";
 import styles from "@/styles/components/Modal.module.scss";
 import utilStyles from "@/styles/utils/utils.module.scss";
 
-type ModalProps = {
+type Props = {
   title: string;
   children?: ReactNode;
   open: boolean;
@@ -10,7 +10,7 @@ type ModalProps = {
   error?: boolean;
 };
 
-const Modal: FC<ModalProps> = ({
+const Modal: FC<Props> = ({
   title,
   children,
   open,

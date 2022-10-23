@@ -1,7 +1,7 @@
 import React, { RefObject, forwardRef } from "react";
 import styles from "@/styles/components/Input.module.scss";
 
-type Input = {
+type Props = {
   type?: "text" | "email" | "password";
   placeholder?: string;
   label?: string;
@@ -10,7 +10,7 @@ type Input = {
   defaultValue?: string;
 };
 
-const Input = forwardRef<HTMLInputElement, Input>(
+const Input = forwardRef<HTMLInputElement, Props>(
   (
     { type = "text", placeholder, label, required = true, defaultValue },
     ref

@@ -57,7 +57,7 @@
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "react-chat-app",
+        "title": "React Chat App",
         "width": 800
       }
     ]
